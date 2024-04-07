@@ -2,3 +2,6 @@ langchain
 openai
 fastapi
 uvicorn
+PyPDF2
+langchain-openai
+python-multipart
