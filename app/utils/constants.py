@@ -10,7 +10,7 @@ class OpenAIModels(Enum):
 
 RESUME_REVIEW_PROMPT = """
 
-Objective: Conduct a thorough evaluation of the provided resume, assigning a score out of 100 based on the universal criteria outlined below. Your feedback should be detailed, constructive, and tailored to enhance the applicant's presentation of their skills, experiences, and overall candidacy for their target job role. The feedback must be actionable, directly addressing both strengths and areas for improvement.
+Objective: Conduct a thorough evaluation of the provided resume, assigning a score out of 100 based on the universal criteria outlined below. Your feedback should be detailed, constructive, and tailored to enhance the applicant's presentation of their skills, experiences, and overall candidacy for their target job role. The feedback must be actionable, directly addressing both strengths and areas for improvement. Please return your response in properly formatted markdown
 
 Scoring Criteria:
 
