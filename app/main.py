@@ -4,8 +4,20 @@ from typing import Union
 from app.utils.constants import SUPPORTED_FILE_TYPES
 from app.review.resume_parser import parse_resume
 from app.review.reviewer import analyze_resume
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+allowed_origins = [
+    "https://www.joekrisciunas.com/",
+    "http://localhost:3000",  
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,  # Specifies which origins are allowed to make requests
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 
 @app.get("/")

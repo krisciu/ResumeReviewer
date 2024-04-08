@@ -5,3 +5,4 @@ uvicorn
 PyPDF2
 langchain-openai
 python-multipart
+starlette
